@@ -34,6 +34,9 @@ document.getElementById("search").addEventListener("keyup", function(event) {
       });
   }
 });
+
+
+
 /*
 function buildTable(data) {
   let table = document.createElement("table");

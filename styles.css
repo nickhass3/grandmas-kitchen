@@ -48,6 +48,16 @@ div {
   text-align: center;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
 .footer {
   text-align: center;
   background-color: #9C86C0;
@@ -56,6 +66,7 @@ div {
   position: relative;
   bottom: 0;
   width: 100%;
+  flex-shrink: 0;
 }
 
 .footer ul {

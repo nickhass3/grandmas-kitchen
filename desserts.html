@@ -58,8 +58,8 @@
     <h1>Dessert</h1>
   </div>
 
-  <div class="search-container">
-    <input type="text" placeholder="Search..">
+  <div class="search-container" id="search-recipe">
+    <input type="text" placeholder="Search Recipe..." id="input-recipe">
   </div>
 
 
@@ -121,6 +121,35 @@
       <li><a href="https://github.com/nickhass3/grandmas-kitchen">GitHub</a></li>
     </ul>
   </footer>
+
+  <script text="type/javascript">
+    document.getElementById("search-recipe").addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        let recipeString = document.getElementById("input-recipe").value;
+        //let recipes = ['Molasses Cookies', 'French Silk Pie', 'Mud Pie', 'Chocolate Chip Cookies', 'No-Bake Cookies'];
+        let recipesMap = {
+          'Molasses Cookies': 'http://grandmaskitchen.nickhass.com/recipes/molasses.html',
+          'French Silk Pie': 'http://grandmaskitchen.nickhass.com/recipes/french-silk-pie.html',
+          'Mud Pie': 'http://grandmaskitchen.nickhass.com/recipes/mud-pie.html',
+          'Chocolate Chip Cookies': '',
+          'No-Bake Cookies': ''
+        };
+        console.log('here');
+        let recipeFound = false;
+        for (let recipe in recipesMap) {
+          if (recipeString === recipe) {
+            // Go to another page
+            window.location.href = recipesMap[recipe];
+            recipeFound = true;
+          }
+        }
+        if (!recipeFound) {
+          alert('Please type the recipe exactly how it is written (Case-sensitive)')
+        }
+      }
+    });
+  </script>
 
 </body>
 

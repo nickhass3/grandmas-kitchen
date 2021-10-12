@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-  <title>Grandma's Kitchen</title>
-  <link rel="icon" href="logo.png"> <!-- Title icon -->
+  <title>Dessert</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,40 +49,21 @@
     </nav>
   </header>
 
+  <ul class="breadcrumb">
+    <li><a href="index.html">Grandma's Kitchen</a></li>
+    <li><a href="nutrition.html">Nutritional Information</a></li>
+  </ul>
+
   <div class="title">
-    <h1>Grandma's Favorites</h1>
-  </div>
-  <div class="container">
-
-    <div class="group-item">
-      <div class="content-large">
-        <a href="recipes/molasses.html"><img src="images/molasses-cookie.jpg" alt="Delicious Molasses Cookies" width=300px></a>
-      </div>
-      <div class="content-small">
-        <h3>Molasses Cookies</h3>
-      </div>
-    </div>
-
-    <div class="group-item">
-      <div class="content-large">
-        <a href="recipes/french-silk-pie.html"><img src="images/french-silk-pie.jpg" alt="logo" width=300px></a>
-      </div>
-      <div class="content-small">
-        <h3>French Silk Pie</h3>
-      </div>
-    </div>
-
-    <div class="group-item">
-      <div class="content-large">
-        <a href="recipes/mud-pie.html"><img src="images/mud-pie.jpg" alt="logo" width=300px></a>
-      </div>
-      <div class="content-small">
-        <h3>Mud Pie</h3>
-      </div>
-    </div>
-
+    <h1>Nutritional Information</h1>
   </div>
 
+  <div class="search-container" id="search">
+    <input type="text" placeholder="Search for a food..." id="input">
+  </div>
+
+  <div class="search-results" id="search-results">
+  </div>
 
   <footer class="footer">
     <ul>
@@ -93,6 +73,8 @@
       <li><a href="https://github.com/nickhass3/grandmas-kitchen">GitHub</a></li>
     </ul>
   </footer>
+
+  <script text="type/javascript" src="script.js"></script>
 
 </body>
 

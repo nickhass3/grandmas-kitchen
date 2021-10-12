@@ -53,6 +53,9 @@ div {
   background-color: #9C86C0;
   /*9C86C0 49346C*/
   overflow: hidden;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer ul {

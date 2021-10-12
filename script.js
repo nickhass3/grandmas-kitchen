@@ -22,10 +22,15 @@ document.getElementById("search").addEventListener("keyup", function(event) {
               myObj[json.foods[0].foodNutrients[i].nutrientName.split(',')[0]] = json.foods[0].foodNutrients[i].value + " " + json.foods[0].foodNutrients[i].unitName;
           }
         }
-        //document.body.appendChild(buildTable(myObj));
-        //document.getElementById("")
-        //document.getElementById("github").innerHTML =
-        //  "<strong>ID= "+json["id"]+"</strong>";
+      }).catch((message) => {
+        console.log(message);
+        document.getElementById("search-results").innerHTML = `<p>No results containing all your search terms were found.</p>`;
+        document.getElementById("search-results").innerHTML += `<p>Suggestions:</p>`;
+        document.getElementById("search-results").innerHTML += `<ul>
+                                                                  <li>Make sure all words are spelled correctly.</li>
+                                                                  <li>Try different keywords.</li>
+                                                                  <li>Try more general keywords.</li>
+                                                                </ul>`;
       });
   }
 });

@@ -58,9 +58,14 @@ body {
   flex: 1;
 }
 
+.search-results>p, h2, ul, li {
+  line-height: 15px;
+  font-family: 'Handlee', cursive, serif;
+}
+
 .footer {
   text-align: center;
-  background-color: #9C86C1;
+  background-color: #9C86C0;
   /*9C86C0 49346C*/
   overflow: hidden;
   position: relative;

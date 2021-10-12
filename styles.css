@@ -58,7 +58,7 @@ body {
   flex: 1;
 }
 
-.search-results>p, .search-results>ul, .search-results>li {
+.search-results>p, .search-results>ul, .search-results>li, .search-results>ul>li {
   line-height: 15px;
   font-family: 'Handlee', cursive, serif;
 }

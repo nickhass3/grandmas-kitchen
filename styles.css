@@ -16,6 +16,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  flex: 1;
 }
 
 .recipe-card {
